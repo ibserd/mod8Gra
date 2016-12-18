@@ -45,11 +45,7 @@ function newGame() {
   if (player.name) { 
     player.score = computer.score = 0; 
     gameState = 'started'; setGameElements(); 
-    playerNameElem.innerHTML = player.name; 
-    function setGamePoints() { 
-      playerPointsElem.innerHTML = player.score;
-      computerPointsElem.innerHTML = computer.score; 
-    }
+    playerNameElem.innerHTML = player.name; // setGamePoints(); // ta funkcja jeszcze nie powstała 
   } 
 }
 
@@ -96,5 +92,3 @@ function checkRoundWinner(playerPick, computerPick) {
         computer.score++; 
     } 
 }
-
-
